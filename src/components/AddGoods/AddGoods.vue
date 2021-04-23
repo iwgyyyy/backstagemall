@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="addgoods take-over">
     hahha
   </div>
 </template>
@@ -17,5 +17,8 @@ export default {
 </script>
 
 <style>
-
+.addgoods{
+  background-image: url("../../assets/Add/background.jpg");
+  position: relative;
+}
 </style>
