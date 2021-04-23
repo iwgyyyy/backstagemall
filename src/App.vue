@@ -55,4 +55,8 @@ input:focus{
   border:1px solid rgb(0, 120, 255);
 }
 /* 全局装饰结束 */
+.order-show{
+  height: 92%;
+  overflow-y: scroll;
+}
 </style>
