@@ -1,30 +1,58 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <router-view></router-view>
 </template>
 
+<script>
+export default {
+  name: "App",
+  created() {},
+  data() {
+    return {};
+  },
+  props: {},
+  methods: {},
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+/* 全局装饰 */
+body{
+  margin: 0;
+  padding: 0;
 }
-
-#nav {
-  padding: 30px;
+.flex-center{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.flex-y-center{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.take-over{
+  width: 100%;
+  height: 100%;
 }
+.card{
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  border: 1px solid #ebeef5;
+  background-color: #fff;
+}
+input{
+  width: 250px;
+  height: 39px;
+  outline: none;
+  border-radius: 4px;
+  border:1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+  font-size: 15px;
+  transition-duration: 800ms;
+}
+input:focus{
+  border:1px solid rgb(0, 120, 255);
+}
+/* 全局装饰结束 */
 </style>
