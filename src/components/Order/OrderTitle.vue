@@ -24,8 +24,9 @@ export default {
 .order-title{
   width: 100%;
   height: 8%;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(114, 123, 131);
   display: flex;
   align-items: center;
+  color:white;
 }
 </style>

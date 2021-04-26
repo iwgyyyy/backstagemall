@@ -112,12 +112,13 @@ export default {
   border: 2px solid #DCDFE6;
   box-sizing: border-box;
   margin-bottom: 0.5%;
+  background:rgb(250,250,250);
 }
 /* 订单头 */
 .order-card-title{
   width: 100%;
   height: 25%;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(240, 240, 240);
   display: flex;
   align-items: center;
 }
