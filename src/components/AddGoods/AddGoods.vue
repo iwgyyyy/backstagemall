@@ -16,13 +16,13 @@
       <!-- 科目 -->
       <el-input 
       placeholder="请输入商品的科目" 
-      v-model="goods.selfClass" 
+      v-model="goods.subject" 
       style="position:absolute;top:17.5%;left:15%;">
       </el-input>
       <!-- 种类 -->
       <el-input 
       placeholder="请输入商品的种类" 
-      v-model="goods.subject" 
+      v-model="goods.selfClass" 
       style="position:absolute;top:30%;left:15%;">
       </el-input>
       <el-input 

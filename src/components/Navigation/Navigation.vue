@@ -40,12 +40,6 @@
       </el-menu-item>
       <el-menu-item index="#">
         <template #title>
-          <i class="el-icon-s-data"></i>
-          <span>查看营收</span> 
-        </template>
-      </el-menu-item>
-      <el-menu-item index="#">
-        <template #title>
           <i class="el-icon-setting"></i>
           <span>修改密码</span> 
         </template>
