@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: "Login",
   created() {},
@@ -64,7 +65,27 @@ export default {
   props: {},
   methods: {
     signIn(){
-      this.$router.push('/main')
+      axios({
+        method:'post',
+        baseURL:'http://localhost:3000',
+        url: '/adminLoginIn',
+        data: {
+          account:this.account,
+          password:this.password
+        }
+      }).then(res=>{
+        if(res.data==0){
+          this.$message.error('账号错误')
+        }else if(res.data==1){
+          this.$message.error('密码错误')
+        }else{
+          this.$message.success('登录成功!')
+          this.$store.commit('loginIn', this.account)
+          this.$router.push('/main')
+        }
+      }).catch(err=>{
+        console.log(err);
+      })
     },
     // 当点击提示信息的事件 让对应的输入框获得焦点
     foucsInput(e){

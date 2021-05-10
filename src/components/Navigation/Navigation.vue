@@ -27,9 +27,9 @@
         <el-menu-item-group>
           <template #title>商品项</template>
           <!-- 后续可能还要v-for循环遍历 -->
-          <el-menu-item index="#">宠物</el-menu-item>
-          <el-menu-item index="#">宠物用品</el-menu-item>
-          <el-menu-item index="#">宠物周边</el-menu-item>
+          <el-menu-item index="/main/showpets">宠物</el-menu-item>
+          <el-menu-item index="/main/showpetsgoods">宠物用品</el-menu-item>
+          <el-menu-item index="/main/showsouvenir">宠物周边</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
       <el-menu-item index="/main/addgoods">
@@ -38,7 +38,7 @@
           <span>添加商品</span> 
         </template>
       </el-menu-item>
-      <el-menu-item index="#">
+      <el-menu-item index="/main/changepassword">
         <template #title>
           <i class="el-icon-setting"></i>
           <span>修改密码</span> 
